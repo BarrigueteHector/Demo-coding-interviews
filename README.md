@@ -97,3 +97,66 @@ Sample Output:
 ```
 4
 ```
+
+## Ejercicio 3: Repeated String
+
+Given a string ``s`` of lowercase English letters that is repeated infinitely many times, and an integer ``n``, the task is to find and print the number of letter a's in the first ``n`` letters of the infinite string.
+
+Example
+```
+s = 'abcac'
+n = 10
+```
+
+The infinite repeated string would be: ``abcacabcac...``
+The substring we consider is the first 10 characters: ``abcacabcac``
+There are 4 occurrences of the letter ``a`` in that substring.
+
+Function Description
+Complete the ``repeatedString`` function with the following signature:
+
+```
+def repeatedString(s: str, n: int) -> int:
+```
+
+Parameters:
+``s``: a string to repeat
+
+``n``: the number of characters to consider
+
+Returns:
+``int``: the frequency of letter a in the substring
+
+Input Format:
+The first line contains a single string ``s``.
+
+The second line contains an integer ``n``.
+
+Constraints
+
+```
+1 ≤ ∣𝑠∣ ≤ 100
+1 ≤ n ≤ 10^12
+```
+ 
+For 25% of the test cases, 
+```
+𝑛 ≤ 10^6
+n ≤ 10^6
+```
+
+Sample Input:
+
+```
+aba
+10
+```
+
+Sample Output:
+```
+7
+```
+
+Explanation:
+The first ``n = 10`` letters of the infinite string are ``abaabaaaba``.
+Because there are ``7`` a's, we return ``7``.
